@@ -1,0 +1,86 @@
+.Gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Gallery .Card {
+  position: relative;
+}
+
+.Gallery .Card .Img {
+  margin: 10px;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 320px) {
+  .Gallery .Card .Img {
+    height: 205px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Gallery .Card .Img {
+    height: 249px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Gallery .Card .Img {
+    height: 230px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .Gallery .Card .Img {
+    height: 275px;
+  }
+}
+
+.Gallery .Card .Overlay {
+  margin: 10px;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  height: 30px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.Gallery .Card .Overlay .Text {
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 20px;
+  color: black;
+}
+
+.Gallery .Card .Overlay .Text__name {
+  line-height: 22px;
+  margin: 5px 15px 1px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.Gallery .Card .Overlay .Text__info {
+  margin: 5px 15px 0px;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.Gallery .Card .Overlay .Text__info .b {
+  font-weight: 500;
+}
+
+.Gallery .Overlay:hover {
+  height: 145px;
+}
+/*# sourceMappingURL=Gallery.css.map */

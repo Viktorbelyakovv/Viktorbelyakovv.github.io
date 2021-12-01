@@ -1,0 +1,269 @@
+.Filters{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 0px 25px;
+  @media only screen and (max-width: 767px) {
+    margin: 0px 0px 20px;
+  } 
+}
+
+.Filter{
+  height: 45px;
+  margin: 10px;
+  @media only screen and (max-width: 767px) {
+    margin: 0px 10px 15px;
+  } 
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 8px; 
+  background: white;
+  color: black; 
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  position: relative;
+  display: flex;
+}
+
+.Input {
+  outline: none;
+  padding: 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &--dark {
+    color: white;
+    border: 1px solid white;
+    background: #0C0C0C;
+  }
+}
+
+.Select {   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;    
+  &--open {
+    border-bottom: 1px solid transparent;
+    border-radius: 8px 8px 0 0;     
+  }
+  &--dark {
+    border: 1px solid white;       
+    color: white;
+    background: black;
+  }
+  &--open.Select--dark {
+    border-bottom: 1px solid transparent;
+  }
+  &__title {
+    flex-wrap: wrap;
+    margin: 0 42px 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }  
+  &__optionContainer {      
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: inherit;
+    top: 44px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;    
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px;
+    background: white;
+    z-index: 1;
+
+    &--open {      
+      border-radius: 0 0 8px 8px;
+      border-color: rgba(0, 0, 0, 0.3) black black;
+      max-height: 300px; 
+      .simplebar-track.simplebar-vertical{
+        right: 8px;
+      }
+      .simplebar-scrollbar::before {
+        background: #7B7B7B;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        opacity: 1;
+      }
+      .simplebar-mask{
+        @media only screen and (min-width: 320px) {
+          margin: 10px 0 22px 0;
+        }
+        @media only screen and (min-width: 768px) {
+          margin: 10px 0 25px 0;
+        }
+        @media only screen and (min-width: 1024px) {
+          margin: 10px 0 25px 0; 
+        }
+        @media only screen and (min-width: 1366px) {
+          margin: 10px 0 10px 0;     
+        }        
+      }
+    }
+    &--dark {
+      border: 1px solid ;
+      border-color: rgba(255, 255, 255, 0.3) white white;
+      background: #0C0C0C;
+    }
+  }
+  &__option {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(100%);
+    box-sizing: border-box;
+    padding: 0 15px;    
+    &:hover {
+      background: #0C0C0C;
+      color: white;
+    }
+    &--dark {
+      &:hover {
+        background: white;
+        color: #0C0C0C;
+      }
+    }
+    &:last-of-type {
+      border-radius: 0 0 8px 8px;
+    }
+  }
+
+  &__optionName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 10px;
+  }
+  &__arrow {
+    position: absolute;
+    display: flex;
+    right: 18px;
+    float: right;
+    fill: #b3b3b3;
+  }  
+}
+
+.Range {  
+  flex-direction: column; 
+  justify-content: center;
+  line-height: 15px;;
+  cursor: pointer;
+  &--dark {
+    border: 1px solid white;
+    background: #0C0C0C;
+    color: white;
+  }
+  &--open {
+    border-bottom: 1px solid transparent;
+    border-radius: 8px 8px 0 0;
+  }
+  &__title {
+    margin: 14px 0 15px 14px;
+  }
+  &__arrow {
+    position: absolute;
+    display: flex;
+    right: 18px;
+    float: right;
+    fill: #b3b3b3;
+  }
+  &__сontainer {
+    flex-direction: row;  
+    @media only screen and (min-width: 768px) and (max-width: 1365px) {
+      flex-direction: column;
+    }
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: inherit;
+    top: 44px;
+    border: 1px solid black;    
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px;
+    background: white;
+    z-index: 1;
+    @media only screen and (min-width: 320px) {
+      padding: 20px 17.5px;
+    }
+    @media only screen and (min-width: 768px) {
+      padding: 20px 25px;
+    }
+    @media only screen and (min-width: 1024px) {
+      padding: 20px 55px; 
+    }
+    @media only screen and (min-width: 1366px) {
+      padding: 20px 21px;   
+    }
+    &--dark {
+      border: 1px solid white;
+      background: #0C0C0C;
+      color: white;
+    }
+    &--open {
+      border-top: none;
+      display: flex;
+    }
+  }
+}
+
+.input {
+  height: 45px; 
+  width: 110px;
+  @media only screen and (min-width: 1366px) {
+    height: 45px;    
+    width: 95px; 
+  }  
+  border: none;
+  outline: none;
+  background: #efefef;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  user-select: none;
+  &--dark {
+    color: black;
+    background: #efefef;
+  }
+  &--from{
+    @media only screen and (min-width: 768px) and (max-width: 1365px) {
+      margin-bottom: 15px;
+    }
+  }
+  &--before{
+    @media only screen and (min-width: 768px) and (max-width: 1365px) {
+      margin-top: 15px;
+    }
+  }
+  ::placeholder {
+    color: #b3b3b3;
+  }
+}
+.separator {
+  width: 12px;
+  height: 1px;
+  background: #0C0C0C;
+  margin: 0 10px;
+  &--dark {
+    background: white;
+  }
+}
+
+
