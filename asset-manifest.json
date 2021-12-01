@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/frameworkteam/static/css/main.b93214a1.chunk.css",
+    "main.js": "/frameworkteam/static/js/main.0b72f208.chunk.js",
+    "main.js.map": "/frameworkteam/static/js/main.0b72f208.chunk.js.map",
+    "runtime-main.js": "/frameworkteam/static/js/runtime-main.6582c925.js",
+    "runtime-main.js.map": "/frameworkteam/static/js/runtime-main.6582c925.js.map",
+    "static/js/2.60148c0f.chunk.js": "/frameworkteam/static/js/2.60148c0f.chunk.js",
+    "static/js/2.60148c0f.chunk.js.map": "/frameworkteam/static/js/2.60148c0f.chunk.js.map",
+    "static/js/3.b1328760.chunk.js": "/frameworkteam/static/js/3.b1328760.chunk.js",
+    "static/js/3.b1328760.chunk.js.map": "/frameworkteam/static/js/3.b1328760.chunk.js.map",
+    "index.html": "/frameworkteam/index.html",
+    "static/css/main.b93214a1.chunk.css.map": "/frameworkteam/static/css/main.b93214a1.chunk.css.map",
+    "static/js/2.60148c0f.chunk.js.LICENSE.txt": "/frameworkteam/static/js/2.60148c0f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6582c925.js",
+    "static/js/2.60148c0f.chunk.js",
+    "static/css/main.b93214a1.chunk.css",
+    "static/js/main.0b72f208.chunk.js"
+  ]
+}
